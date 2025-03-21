@@ -1,5 +1,6 @@
 import styles from '@/app/home.module.css'
 import { FaQuestionCircle } from 'react-icons/fa';
+import Icons from './Icons';
 
 
 export default function Card( { card, onClick, flipped }) {
@@ -10,7 +11,7 @@ export default function Card( { card, onClick, flipped }) {
         className={`${styles.card} ${flipped ? styles.flipped : ''}`}
         onClick={onClick}
       >
-        {flipped ? card.value : <FaQuestionCircle className={ styles.backIcon }/>}
+        {flipped ? <Icons iconCode={card.value}/> : <FaQuestionCircle className={ styles.backIcon }/>}
       </div>
     </div>
   )

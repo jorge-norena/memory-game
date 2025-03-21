@@ -1,6 +1,6 @@
   .gameBoard {
     display: grid;
-    grid-template-columns: repeat(4, 100px);
+    grid-template-columns: repeat(6, 100px);
     gap: 10px;
   }
   
@@ -23,6 +23,11 @@
   .card.flipped {
     background-color: #a0d8ef;
     transform: rotateY(180deg);
+  }
+
+  .frontIcon {
+    font-size: 40px;
+    color: #1b7092;
   }
 
   .backIcon {

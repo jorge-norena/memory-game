@@ -6,6 +6,12 @@ export const cardData = [
   { id: 4, value: "D", matched: false },
   { id: 5, value: "E", matched: false },
   { id: 6, value: "F", matched: false },
+  { id: 7, value: "G", matched: false },
+  { id: 8, value: "H", matched: false },
+  { id: 9, value: "I", matched: false },
+  { id: 10, value: "J", matched: false },
+  { id: 11, value: "K", matched: false },
+  { id: 12, value: "L", matched: false },
 ];
 
 
@@ -23,7 +29,5 @@ export const createDeck = () => {
     ); // Segunda copia
 
   // Barajar las cartas
-  console.log("====>", deck);
-  //return deck.sort(() => Math.random() - 0.5);
-  return deck;
+  return deck.sort(() => Math.random() - 0.5);
 };

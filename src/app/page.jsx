@@ -1,4 +1,5 @@
 import GameBoard from "./components/GameBoard";
+import Icons from "./components/Icons";
 
 export default function Home() {
   return (

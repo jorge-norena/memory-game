@@ -1,5 +1,5 @@
 // app/components/GameBoard.js
-'use client'; // Indica que este es un componente del cliente
+'use client';
 import { useState, useEffect } from 'react';
 import Card from './Card';
 import { createDeck } from '../utils/cards';
@@ -19,11 +19,8 @@ export default function GameBoard(){
 
   // Manejar el clic en una carta
   const handleCardClick = (card) => {
-    console.log('CARD CLICK===>', card)
     if (flippedCards.length === 2 || flippedCards.includes(card.id) || card.matched) return;
-    console.log('Continua condicional')
     const newFlippedCards = [...flippedCards, card.id];
-    console.log('CARD newFlippedCards ===>', newFlippedCards)
     setFlippedCards(newFlippedCards);
 
     // Verificar si hay una coincidencia
@@ -35,7 +32,6 @@ export default function GameBoard(){
       if (firstCard && secondCard && firstCard.value === secondCard.value) {
         setMatchedCards([...matchedCards, firstCard.id, secondCard.id]);
       }
-      console.log('No Hay asierto!!! despues de dos clics')
 
       // Voltear las cartas después de un breve retraso
       setTimeout(() => setFlippedCards([]), 1000);
