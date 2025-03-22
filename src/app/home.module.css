@@ -1,7 +1,11 @@
   .gameBoard {
     display: grid;
-    grid-template-columns: repeat(6, 100px);
+    grid-template-columns: repeat(6, 106px);
     gap: 10px;
+    border: solid 3px #ffcc00;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #646464;
   }
   
   .card {
@@ -15,22 +19,67 @@
     font-size: 24px;
     cursor: pointer;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     transition: transform 0.3s ease, background-color 0.3s ease;
-    border: solid 3px #c8c8c8;
+    border: solid 3px #ffcc00;
   }
   
   .card.flipped {
-    background-color: #a0d8ef;
+    background-color: #ffcc00;
     transform: rotateY(180deg);
+    border: solid 3px #2f2f2f;;
   }
 
   .frontIcon {
     font-size: 40px;
-    color: #1b7092;
+    color: #2f2f2f;
   }
 
   .backIcon {
     font-size: 40px;
-    color: #c8c8c8;
+    color: #ffcc00;
+  }
+
+  .controls {
+    display: flex;
+    /* grid-template-columns: repeat(3, 220px); */
+    gap: 10px;
+    border: solid 3px #ffcc00;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #646464;
+    margin-top: 10px;
+    justify-content: center;
+  }
+
+  .indicator {
+    width: 180px;
+    color: #e5e5e5;
+    background-color: #2f2f2f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    font-size: 24px;
+    cursor: pointer;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    border: solid 3px #ffcc00;
+    font-size: 18px;
+  }
+
+  .restart {
+    width: 220px;
+    color: #2f2f2f;
+    background-color: #ffcc00;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    font-size: 24px;
+    cursor: pointer;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    border: solid 3px #ffcc00;
+    font-size: 18px;
   }

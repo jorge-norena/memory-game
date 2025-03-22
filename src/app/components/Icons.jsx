@@ -17,7 +17,6 @@ import {
 
 
 export default function Icons( {iconCode} ) {
-    console.log('======>', iconCode)
   return (
     <div>
         <div className={ styles.frontIcon }>
