@@ -141,7 +141,6 @@ export default function GameBoard() {
         play={playCloseSound}
         onEnded={() => {
           setPlayCloseSound(false);
-          console.log("WWWW");
         }}
       />
       <Sound
